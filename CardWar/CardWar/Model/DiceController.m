@@ -45,6 +45,8 @@
     if (roll.flags == DPRollFlagOK) {
         NSLog(@"Good rolls: %i", roll.result);
     }
+    
+    
 }
 
 
