@@ -8,5 +8,19 @@
 
 #import <Foundation/Foundation.h>
 
-@interface DiceController : NSObject 
+@protocol DiceControllerDelegate <NSObject>
+
+- (void)didDetectRoll:(int)roll;
+
+@end
+
+@interface DiceController : NSObject
+
+@property (nonatomic, weak) id<DiceControllerDelegate> delegate;
+
+@property (nonatomic) bool shouldUpdateOnRolls;
+
+- (void) signalFirstPlayerWin;
+- (void) signalSecondPlayerWin;
+
 @end
