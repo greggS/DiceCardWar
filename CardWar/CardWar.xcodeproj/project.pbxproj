@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A5C2672D19818EAB005A2492 /* DicePlus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5C2672C19818EAB005A2492 /* DicePlus.framework */; };
 		A5C2673119818F72005A2492 /* DiceController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5C2673019818F72005A2492 /* DiceController.m */; };
 		AC0474EA19818DDA000E72A0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC0474E919818DDA000E72A0 /* Foundation.framework */; };
 		AC0474EC19818DDA000E72A0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC0474EB19818DDA000E72A0 /* CoreGraphics.framework */; };
@@ -29,6 +28,7 @@
 		AC25514419819D8200E69D54 /* MultipeerConnectivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC25514319819D8200E69D54 /* MultipeerConnectivity.framework */; };
 		AC2551471981A0A500E69D54 /* DGGamesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC2551461981A0A500E69D54 /* DGGamesTableViewController.m */; };
 		AC25514A1981A0B600E69D54 /* DGHostViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC2551491981A0B600E69D54 /* DGHostViewController.m */; };
+		AC25514D1981A2C000E69D54 /* DicePlus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5C2672C19818EAB005A2492 /* DicePlus.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC25514D1981A2C000E69D54 /* DicePlus.framework in Frameworks */,
 				AC25514419819D8200E69D54 /* MultipeerConnectivity.framework in Frameworks */,
 				AC0474EC19818DDA000E72A0 /* CoreGraphics.framework in Frameworks */,
 				AC0474EE19818DDA000E72A0 /* UIKit.framework in Frameworks */,
@@ -134,6 +135,7 @@
 			isa = PBXGroup;
 			children = (
 				AC25514319819D8200E69D54 /* MultipeerConnectivity.framework */,
+				A5C2672C19818EAB005A2492 /* DicePlus.framework */,
 				AC0474E919818DDA000E72A0 /* Foundation.framework */,
 				AC0474EB19818DDA000E72A0 /* CoreGraphics.framework */,
 				AC0474ED19818DDA000E72A0 /* UIKit.framework */,
@@ -321,6 +323,7 @@
 				AC04752319818FA5000E72A0 /* DGCardShuffler.m in Sources */,
 				AC25514A1981A0B600E69D54 /* DGHostViewController.m in Sources */,
 				AC04752019818EA1000E72A0 /* DGCard.m in Sources */,
+				A5C2673119818F72005A2492 /* DiceController.m in Sources */,
 				AC0474F619818DDA000E72A0 /* main.m in Sources */,
 				AC25514219819D6900E69D54 /* DGConnectivityController.m in Sources */,
 				AC04750019818DDA000E72A0 /* DGViewController.m in Sources */,
@@ -452,7 +455,8 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					/Users/mycek/Workspace/Hackatons/DiceCardWar,
+					"$(SRCROOT)",
+					"\"$(SRCROOT)\"/..",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CardWar/CardWar-Prefix.pch";
@@ -474,7 +478,8 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					/Users/mycek/Workspace/Hackatons/DiceCardWar,
+					"$(SRCROOT)",
+					"\"$(SRCROOT)\"/..",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CardWar/CardWar-Prefix.pch";
