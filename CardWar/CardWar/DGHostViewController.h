@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "DiceController.h"
 
 @interface DGHostViewController : UIViewController
+
+@property (strong, nonatomic) DiceController * diceController;
 
 @end
