@@ -25,6 +25,8 @@
 		AC04752319818FA5000E72A0 /* DGCardShuffler.m in Sources */ = {isa = PBXBuildFile; fileRef = AC04752219818FA5000E72A0 /* DGCardShuffler.m */; };
 		AC25514219819D6900E69D54 /* DGConnectivityController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC25514119819D6900E69D54 /* DGConnectivityController.m */; };
 		AC25514419819D8200E69D54 /* MultipeerConnectivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC25514319819D8200E69D54 /* MultipeerConnectivity.framework */; };
+		AC2551471981A0A500E69D54 /* DGGamesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC2551461981A0A500E69D54 /* DGGamesTableViewController.m */; };
+		AC25514A1981A0B600E69D54 /* DGHostViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC2551491981A0B600E69D54 /* DGHostViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +66,10 @@
 		AC25514019819D6900E69D54 /* DGConnectivityController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DGConnectivityController.h; sourceTree = "<group>"; };
 		AC25514119819D6900E69D54 /* DGConnectivityController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DGConnectivityController.m; sourceTree = "<group>"; };
 		AC25514319819D8200E69D54 /* MultipeerConnectivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MultipeerConnectivity.framework; path = System/Library/Frameworks/MultipeerConnectivity.framework; sourceTree = SDKROOT; };
+		AC2551451981A0A500E69D54 /* DGGamesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DGGamesTableViewController.h; sourceTree = "<group>"; };
+		AC2551461981A0A500E69D54 /* DGGamesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DGGamesTableViewController.m; sourceTree = "<group>"; };
+		AC2551481981A0B600E69D54 /* DGHostViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DGHostViewController.h; sourceTree = "<group>"; };
+		AC2551491981A0B600E69D54 /* DGHostViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DGHostViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +136,8 @@
 				AC0474FB19818DDA000E72A0 /* Main.storyboard */,
 				AC0474FE19818DDA000E72A0 /* DGViewController.h */,
 				AC0474FF19818DDA000E72A0 /* DGViewController.m */,
+				AC25514B1981A0BD00E69D54 /* GamesTableVC */,
+				AC25514C1981A0C700E69D54 /* HostVC */,
 				AC25514019819D6900E69D54 /* DGConnectivityController.h */,
 				AC25514119819D6900E69D54 /* DGConnectivityController.m */,
 				AC25513F19819D2C00E69D54 /* Cards Model */,
@@ -177,6 +185,24 @@
 				AC04752219818FA5000E72A0 /* DGCardShuffler.m */,
 			);
 			name = "Cards Model";
+			sourceTree = "<group>";
+		};
+		AC25514B1981A0BD00E69D54 /* GamesTableVC */ = {
+			isa = PBXGroup;
+			children = (
+				AC2551451981A0A500E69D54 /* DGGamesTableViewController.h */,
+				AC2551461981A0A500E69D54 /* DGGamesTableViewController.m */,
+			);
+			name = GamesTableVC;
+			sourceTree = "<group>";
+		};
+		AC25514C1981A0C700E69D54 /* HostVC */ = {
+			isa = PBXGroup;
+			children = (
+				AC2551481981A0B600E69D54 /* DGHostViewController.h */,
+				AC2551491981A0B600E69D54 /* DGHostViewController.m */,
+			);
+			name = HostVC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -278,10 +304,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC04752319818FA5000E72A0 /* DGCardShuffler.m in Sources */,
+				AC25514A1981A0B600E69D54 /* DGHostViewController.m in Sources */,
 				AC04752019818EA1000E72A0 /* DGCard.m in Sources */,
 				AC0474F619818DDA000E72A0 /* main.m in Sources */,
 				AC25514219819D6900E69D54 /* DGConnectivityController.m in Sources */,
 				AC04750019818DDA000E72A0 /* DGViewController.m in Sources */,
+				AC2551471981A0A500E69D54 /* DGGamesTableViewController.m in Sources */,
 				AC0474FA19818DDA000E72A0 /* DGAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
