@@ -7,9 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "DGConnectivityController.h"
 
 @interface DGAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
+@property (nonatomic, strong) DGConnectivityController *connectivityController;
 
 @end

@@ -21,6 +21,10 @@
 		AC04750B19818DDA000E72A0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC0474ED19818DDA000E72A0 /* UIKit.framework */; };
 		AC04751319818DDA000E72A0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AC04751119818DDA000E72A0 /* InfoPlist.strings */; };
 		AC04751519818DDA000E72A0 /* CardWarTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AC04751419818DDA000E72A0 /* CardWarTests.m */; };
+		AC04752019818EA1000E72A0 /* DGCard.m in Sources */ = {isa = PBXBuildFile; fileRef = AC04751F19818EA1000E72A0 /* DGCard.m */; };
+		AC04752319818FA5000E72A0 /* DGCardShuffler.m in Sources */ = {isa = PBXBuildFile; fileRef = AC04752219818FA5000E72A0 /* DGCardShuffler.m */; };
+		AC25514219819D6900E69D54 /* DGConnectivityController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC25514119819D6900E69D54 /* DGConnectivityController.m */; };
+		AC25514419819D8200E69D54 /* MultipeerConnectivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC25514319819D8200E69D54 /* MultipeerConnectivity.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +57,13 @@
 		AC04751019818DDA000E72A0 /* CardWarTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CardWarTests-Info.plist"; sourceTree = "<group>"; };
 		AC04751219818DDA000E72A0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		AC04751419818DDA000E72A0 /* CardWarTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CardWarTests.m; sourceTree = "<group>"; };
+		AC04751E19818EA1000E72A0 /* DGCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DGCard.h; sourceTree = "<group>"; };
+		AC04751F19818EA1000E72A0 /* DGCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DGCard.m; sourceTree = "<group>"; };
+		AC04752119818FA5000E72A0 /* DGCardShuffler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DGCardShuffler.h; sourceTree = "<group>"; };
+		AC04752219818FA5000E72A0 /* DGCardShuffler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DGCardShuffler.m; sourceTree = "<group>"; };
+		AC25514019819D6900E69D54 /* DGConnectivityController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DGConnectivityController.h; sourceTree = "<group>"; };
+		AC25514119819D6900E69D54 /* DGConnectivityController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DGConnectivityController.m; sourceTree = "<group>"; };
+		AC25514319819D8200E69D54 /* MultipeerConnectivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MultipeerConnectivity.framework; path = System/Library/Frameworks/MultipeerConnectivity.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC25514419819D8200E69D54 /* MultipeerConnectivity.framework in Frameworks */,
 				AC0474EC19818DDA000E72A0 /* CoreGraphics.framework in Frameworks */,
 				AC0474EE19818DDA000E72A0 /* UIKit.framework in Frameworks */,
 				AC0474EA19818DDA000E72A0 /* Foundation.framework in Frameworks */,
@@ -101,6 +113,7 @@
 		AC0474E819818DDA000E72A0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				AC25514319819D8200E69D54 /* MultipeerConnectivity.framework */,
 				AC0474E919818DDA000E72A0 /* Foundation.framework */,
 				AC0474EB19818DDA000E72A0 /* CoreGraphics.framework */,
 				AC0474ED19818DDA000E72A0 /* UIKit.framework */,
@@ -117,6 +130,9 @@
 				AC0474FB19818DDA000E72A0 /* Main.storyboard */,
 				AC0474FE19818DDA000E72A0 /* DGViewController.h */,
 				AC0474FF19818DDA000E72A0 /* DGViewController.m */,
+				AC25514019819D6900E69D54 /* DGConnectivityController.h */,
+				AC25514119819D6900E69D54 /* DGConnectivityController.m */,
+				AC25513F19819D2C00E69D54 /* Cards Model */,
 				AC04750119818DDA000E72A0 /* Images.xcassets */,
 				AC0474F019818DDA000E72A0 /* Supporting Files */,
 			);
@@ -150,6 +166,17 @@
 				AC04751119818DDA000E72A0 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AC25513F19819D2C00E69D54 /* Cards Model */ = {
+			isa = PBXGroup;
+			children = (
+				AC04751E19818EA1000E72A0 /* DGCard.h */,
+				AC04751F19818EA1000E72A0 /* DGCard.m */,
+				AC04752119818FA5000E72A0 /* DGCardShuffler.h */,
+				AC04752219818FA5000E72A0 /* DGCardShuffler.m */,
+			);
+			name = "Cards Model";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -250,7 +277,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC04752319818FA5000E72A0 /* DGCardShuffler.m in Sources */,
+				AC04752019818EA1000E72A0 /* DGCard.m in Sources */,
 				AC0474F619818DDA000E72A0 /* main.m in Sources */,
+				AC25514219819D6900E69D54 /* DGConnectivityController.m in Sources */,
 				AC04750019818DDA000E72A0 /* DGViewController.m in Sources */,
 				AC0474FA19818DDA000E72A0 /* DGAppDelegate.m in Sources */,
 			);
@@ -457,6 +487,7 @@
 				AC04751A19818DDA000E72A0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AC04751B19818DDA000E72A0 /* Build configuration list for PBXNativeTarget "CardWarTests" */ = {
 			isa = XCConfigurationList;
@@ -465,6 +496,7 @@
 				AC04751D19818DDA000E72A0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
