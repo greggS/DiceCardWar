@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A5C2672D19818EAB005A2492 /* DicePlus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5C2672C19818EAB005A2492 /* DicePlus.framework */; };
+		A5C2673119818F72005A2492 /* DiceController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5C2673019818F72005A2492 /* DiceController.m */; };
 		AC0474EA19818DDA000E72A0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC0474E919818DDA000E72A0 /* Foundation.framework */; };
 		AC0474EC19818DDA000E72A0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC0474EB19818DDA000E72A0 /* CoreGraphics.framework */; };
 		AC0474EE19818DDA000E72A0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC0474ED19818DDA000E72A0 /* UIKit.framework */; };
@@ -36,6 +37,8 @@
 
 /* Begin PBXFileReference section */
 		A5C2672C19818EAB005A2492 /* DicePlus.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DicePlus.framework; path = ../DicePlus.framework; sourceTree = "<group>"; };
+		A5C2672F19818F72005A2492 /* DiceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DiceController.h; path = Model/DiceController.h; sourceTree = "<group>"; };
+		A5C2673019818F72005A2492 /* DiceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DiceController.m; path = Model/DiceController.m; sourceTree = "<group>"; };
 		AC0474E619818DDA000E72A0 /* CardWar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CardWar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC0474E919818DDA000E72A0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		AC0474EB19818DDA000E72A0 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -82,6 +85,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A5C2672E19818F41005A2492 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A5C2672F19818F72005A2492 /* DiceController.h */,
+				A5C2673019818F72005A2492 /* DiceController.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		AC0474DD19818DDA000E72A0 = {
 			isa = PBXGroup;
 			children = (
@@ -116,6 +128,7 @@
 		AC0474EF19818DDA000E72A0 /* CardWar */ = {
 			isa = PBXGroup;
 			children = (
+				A5C2672E19818F41005A2492 /* Model */,
 				AC0474F819818DDA000E72A0 /* DGAppDelegate.h */,
 				AC0474F919818DDA000E72A0 /* DGAppDelegate.m */,
 				AC0474FB19818DDA000E72A0 /* Main.storyboard */,
@@ -254,6 +267,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5C2673119818F72005A2492 /* DiceController.m in Sources */,
 				AC0474F619818DDA000E72A0 /* main.m in Sources */,
 				AC04750019818DDA000E72A0 /* DGViewController.m in Sources */,
 				AC0474FA19818DDA000E72A0 /* DGAppDelegate.m in Sources */,
@@ -387,6 +401,11 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CardWar/CardWar-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"\"$(SRCROOT)\"",
+				);
 				INFOPLIST_FILE = "CardWar/CardWar-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -404,6 +423,11 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CardWar/CardWar-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"\"$(SRCROOT)\"",
+				);
 				INFOPLIST_FILE = "CardWar/CardWar-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
